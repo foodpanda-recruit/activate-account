@@ -1,3 +1,4 @@
+const fetch = require('node-fetch');
 
 const telNo = document.getElementById('telNo').value;
 const searchBtn = document.getElementsByClassName('search-btn');
