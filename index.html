@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>線上快速開通進度查詢</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>FoodPanda 線上快速開通進度查詢</h1>
+    <hr>
+    <form>
+      <div>
+        <label for="telNo">電話號碼：</label>
+        <input id="telNo" type="tel" placeholder="請輸入電話號碼" required pattern="[0-9]{10}"/>
+        <span class="validation"></span>
+      </div>
+      <div>
+        <button class="search-btn" type="button" (click)="onSearch()">搜尋</button>
+      </div>
+    </form>
+  </body>
+  <script type="text/javascript" src="./main.js"></script>
+</html>
