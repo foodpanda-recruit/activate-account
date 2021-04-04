@@ -1,2 +1,41 @@
-# activate-account
-線上快速開通_進度查詢
+## 關於此專案
+- 線上快速開通進度查詢
+- 以 Google sheet 做為資料庫
+
+### Dependencies
+> 以下內容參考自此篇文章：[如何用Webpack來打包JavaScript、SCSS/CSS、HTML網頁和任意檔案？](https://magiclen.org/webpack/)
+- webpack `^5.30.0`
+- webpack-cli `^4.6.0`
+- webpack-dev-server `^3.11.2`
+- clean-webpack-plugin `^3.0.0`
+  - 打包專案前清空目錄
+- terser-webpack-plugin `^5.1.1`
+  - 前身為 UglifyES
+  - 混淆和最小化 JS
+- babel: `core` / `preset-env` / `register` / `-loader`
+  - 能夠轉換 JS 語法，支援各個瀏覽器
+  - Node.js 能夠支援的 ECMAScript 版本很新，但部分瀏覽器尚未支援
+- file-loader `^6.2.0`
+  - 協助載入檔案
+- html-webpack-plugin `^5.3.1`
+  - 產生 html，或最小化現有的 html 
+- css-loader `^5.2.0`
+  - 真正讀取 CSS 的載入器
+- postcss-loader `^5.2.0`
+  - 對 CSS 做前處理的載入器
+- autoprefixer `^10.2.5`
+  - 自動添加所有網頁瀏覽器的 CSS 前綴
+- cssnano `^4.1.10`
+  - 最小化 CSS
+- node-sass `^5.0.0` / sass-loader `^11.0.1`
+  - 讀取 Sass, SCSS, CSS 檔案的載入器，會將檔案轉為 CSS 格式
+- mini-css-extract-plugin
+  - 將 CSS 從 JS 中分離
+- purgecss-webpack-plugin `^4.0.3`
+  - 移除沒有在用的 CSS
+- glob `^7.1.6`
+  - 方便用來取得檔案路徑的套件
+- bootstrap `^5.0.0-beta3`
+- load-fetch `^4.17.21`
+- node-fetch `^2.6.1`
+  - fetch api
